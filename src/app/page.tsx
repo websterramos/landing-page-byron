@@ -1,4 +1,6 @@
 import Form from "@/components/Form";
+import React from 'react';
+import Carrossel from '../components/Carrossel'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -24,7 +26,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <div>
+        <Carrossel />
+      </div>
       <section id="contato" className="flex items-center justify-center">
         <div className="flex w-full max-w-7xl flex-col items-center justify-center gap-8 px-4 py-16 md:gap-16">
           <h2 className="text-center text-3xl font-bold uppercase drop-shadow-lg">
