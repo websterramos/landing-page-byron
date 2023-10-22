@@ -1,6 +1,10 @@
 import Form from "@/components/Form";
+<<<<<<< HEAD
 import React from 'react';
 import Carrossel from '../components/Carrossel'
+=======
+import "@fortawesome/fontawesome-svg-core/styles.css";
+>>>>>>> 9788b408839a6d1a023cae9219c78c286e032d86
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -9,15 +13,24 @@ export default function Home() {
   return (
     <main className="bg-gray-200">
       <section id="sobre" className="flex items-center justify-center">
-        <div className="flex w-full max-w-7xl flex-col items-center justify-center gap-8 px-4 py-16 md:gap-16">
+        <div
+          id="sobre-div"
+          className="flex w-full max-w-7xl flex-col items-center justify-center gap-8 px-4 py-16 md:gap-16 md:py-32"
+        >
           <h2 className="text-center text-3xl font-bold uppercase drop-shadow-lg">
             Sobre
           </h2>
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-32">
-            <div className="max-w-md">
+          <div
+            id="sobre-content"
+            className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-32"
+          >
+            <div id="sobre-parte-1" className="max-w-md">
               <img className="rounded-xl" src="c1.jpg" />
             </div>
-            <div className="max-w-md text-lg font-medium leading-relaxed">
+            <div
+              id="sobre-parte-2"
+              className="max-w-md text-lg font-medium leading-relaxed"
+            >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
               magnam. Laborum voluptas animi unde ipsa iure? Numquam sapiente
               eligendi officiis, non provident tenetur consectetur, sit,
@@ -30,7 +43,10 @@ export default function Home() {
         <Carrossel />
       </div>
       <section id="contato" className="flex items-center justify-center">
-        <div className="flex w-full max-w-7xl flex-col items-center justify-center gap-8 px-4 py-16 md:gap-16">
+        <div
+          id="contato-div"
+          className="flex w-full max-w-7xl flex-col items-center justify-center gap-8 px-4 py-16 md:py-32"
+        >
           <h2 className="text-center text-3xl font-bold uppercase drop-shadow-lg">
             Contato
           </h2>
@@ -63,29 +79,29 @@ export default function Home() {
               className="flex max-w-md flex-col items-center justify-center gap-8"
             >
               <a
-                className="flex w-full items-center justify-between gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
+                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
                 href="https://wa.me/55XXXXXXXXXXX"
                 target="__blank"
                 rel="noopener"
               >
                 WhatsApp
-                <FontAwesomeIcon icon={faWhatsapp} size="2xs" />
+                <FontAwesomeIcon icon={faWhatsapp} size="xl" />
               </a>
               <a
-                className="flex w-full items-center justify-between gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
+                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
                 href="mailto:byron@byronsolutions.com"
               >
                 E-mail
-                <FontAwesomeIcon icon={faEnvelope} size="2xs" />
+                <FontAwesomeIcon icon={faEnvelope} size="xl" />
               </a>
               <a
-                className="flex w-full items-center justify-between gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
+                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
                 href="https://www.instagram.com/"
                 target="__blank"
                 rel="noopener"
               >
                 Instagram
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faInstagram} size="xl" />
               </a>
             </div>
           </div>
