@@ -2,10 +2,8 @@ import Form from "@/components/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { Header } from "@/app/components/Header";
-import { Home } from "@/app/components/Home";
 
-const page = () => {
+export default function Home() {
   return (
     <main className="bg-gray-200">
       <section id="sobre" className="flex items-center justify-center">
@@ -91,4 +89,4 @@ const page = () => {
       </section>
     </main>
   );
-};
+}

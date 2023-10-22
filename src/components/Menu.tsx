@@ -1,3 +1,4 @@
+"use client";
 //Arquivo: Efeito do Menu (Navbar)
 import React, { useEffect } from "react";
 
@@ -12,39 +13,41 @@ export function setupMenu() {
   }
 }
 
-export function Menu() {
+const Menu = () => {
   useEffect(() => {
     setupMenu();
   }, []);
 
   return (
     <div id="menu" className="hidden md:hidden">
-      <div className="px-2 pt-2 pd-2 sm:px-3">
+      <div className="pd-2 px-2 pt-2 sm:px-3">
         <a
           href="#home"
-          className="hover:bg-gray-200 block px-3 py-2 rounded-md transition duration-400 ease-in-out focus:bg-gray-300"
+          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
         >
           Home
         </a>
         <a
           href="#empresa"
-          className="hover:bg-gray-200 block px-3 py-2 rounded-md transition duration-400 ease-in-out focus:bg-gray-300"
+          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
         >
           Empresa
         </a>
         <a
           href="#servicos"
-          className="hover:bg-gray-200 block px-3 py-2 rounded-md transition duration-400 ease-in-out focus:bg-gray-300"
+          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
         >
           Serviços
         </a>
         <a
           href="#contato"
-          className="hover:bg-gray-200 block px-3 py-2 rounded-md transition duration-400 ease-in-out focus:bg-gray-300"
+          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
         >
           Contato
         </a>
       </div>
     </div>
   );
-}
+};
+
+export default Menu;
