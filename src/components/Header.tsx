@@ -10,17 +10,20 @@ const Header = () => {
 
   return (
     <header className="z-10 w-full items-center justify-center bg-white px-4 font-medium shadow-lg drop-shadow-lg md:fixed md:flex md:text-lg">
-      <div className="flex h-20 w-full max-w-7xl items-center justify-between px-4">
-        <a className="focus:outline-none" href="#home">
+      <div
+        id="header-div"
+        className="flex h-20 w-full max-w-7xl items-center justify-between px-4"
+      >
+        <a id="header-parte-1" className="focus:outline-none" href="#home">
           <img className="w-10" src="img/logo2.jpg" alt="Logo" />
         </a>
 
-        <div className="hidden md:flex">
+        <div id="header-parte-2" className="hidden md:flex">
           <Menu />
         </div>
 
         <button
-          className="duration-400 rounded-md px-2 py-1 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300 focus:outline-none active:bg-gray-300 md:hidden"
+          className="duration-400 rounded-lg px-2 py-1 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300 focus:outline-none active:bg-gray-300 md:hidden"
           onClick={() => setShowMobileMenu(!showMobileMenu)}
         >
           <FontAwesomeIcon icon={faBars} size="xl" />

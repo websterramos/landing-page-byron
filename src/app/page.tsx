@@ -1,10 +1,6 @@
 import Form from "@/components/Form";
-<<<<<<< HEAD
-import React from 'react';
-import Carrossel from '../components/Carrossel'
-=======
-import "@fortawesome/fontawesome-svg-core/styles.css";
->>>>>>> 9788b408839a6d1a023cae9219c78c286e032d86
+import React from "react";
+import Carrossel from "../components/Carrossel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -70,7 +66,11 @@ export default function Home() {
                 ></textarea>
               </div>
               <button className="flex max-w-fit items-center justify-center rounded-full bg-blue-600 px-4 py-2 font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800">
-                <input type="submit" value="Enviar" />
+                <input
+                  className="focus:outline-none"
+                  type="submit"
+                  value="Enviar"
+                />
               </button>
             </div>
 
