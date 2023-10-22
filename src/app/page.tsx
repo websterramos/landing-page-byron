@@ -1,10 +1,7 @@
 import Form from "@/components/Form";
-<<<<<<< HEAD
-import React from 'react';
-import Carrossel from '../components/Carrossel'
-=======
 import React from "react";
 import Carrossel from "../components/Carrossel";
+import Button from "@/components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -25,7 +22,7 @@ export default function Home() {
             className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-32"
           >
             <div id="sobre-parte-1" className="max-w-md">
-              <img className="rounded-xl" src="c1.jpg" />
+              <img className="rounded-xl" src="img/equipe.jpg" />
             </div>
             <div
               id="sobre-parte-2"
@@ -39,9 +36,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div id="servicos">
+
+      <section id="servicos">
         <Carrossel />
-      </div>
+      </section>
+
       <section id="contato" className="flex items-center justify-center">
         <div
           id="contato-div"
@@ -69,7 +68,7 @@ export default function Home() {
                   rows="5"
                 ></textarea>
               </div>
-              <button className="flex max-w-fit items-center justify-center rounded-full bg-blue-600 px-4 py-2 font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800">
+              <button className="flex max-w-fit items-center justify-center rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800">
                 <input
                   className="focus:outline-none"
                   type="submit"
