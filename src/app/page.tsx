@@ -1,10 +1,6 @@
 import Form from "@/components/Form";
-<<<<<<< HEAD
 import React from 'react';
 import Carrossel from '../components/Carrossel'
-=======
-import "@fortawesome/fontawesome-svg-core/styles.css";
->>>>>>> 9788b408839a6d1a023cae9219c78c286e032d86
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
