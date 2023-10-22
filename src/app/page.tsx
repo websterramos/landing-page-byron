@@ -1,11 +1,7 @@
 import Form from "@/components/Form";
-<<<<<<< HEAD
 import React from 'react';
 import Carrossel from '../components/Carrossel'
-=======
-import React from "react";
-import Carrossel from "../components/Carrossel";
->>>>>>> 39327999aadf38ff96bb4c84dbb46b396da8d122
+import Homx from "../components/Homx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -13,6 +9,9 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 export default function Home() {
   return (
     <main className="bg-gray-200">
+      <section id="home">
+        <Homx />
+      </section>
       <section id="sobre" className="flex items-center justify-center">
         <div
           id="sobre-div"
