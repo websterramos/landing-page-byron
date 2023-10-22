@@ -5,6 +5,7 @@ import Homx from "../components/Homx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
             className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-32"
           >
             <div id="sobre-parte-1" className="max-w-md">
-              <img className="rounded-xl" src="c1.jpg" />
+              <img className="rounded-xl" src="img/equipe.jpg" />
             </div>
             <div
               id="sobre-parte-2"
@@ -39,9 +40,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div id="servicos">
+
+      <section id="servicos">
         <Carrossel />
-      </div>
+      </section>
+
       <section id="contato" className="flex items-center justify-center">
         <div
           id="contato-div"
@@ -69,7 +72,7 @@ export default function Home() {
                   rows="5"
                 ></textarea>
               </div>
-              <button className="flex max-w-fit items-center justify-center rounded-full bg-blue-600 px-4 py-2 font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800">
+              <button className="flex max-w-fit items-center justify-center rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800">
                 <input
                   className="focus:outline-none"
                   type="submit"
@@ -82,31 +85,21 @@ export default function Home() {
               id="contato-parte-2"
               className="flex max-w-md flex-col items-center justify-center gap-8"
             >
-              <a
-                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
-                href="https://wa.me/55XXXXXXXXXXX"
-                target="__blank"
-                rel="noopener"
-              >
-                WhatsApp
-                <FontAwesomeIcon icon={faWhatsapp} size="xl" />
-              </a>
-              <a
-                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
-                href="mailto:byron@byronsolutions.com"
-              >
-                E-mail
-                <FontAwesomeIcon icon={faEnvelope} size="xl" />
-              </a>
-              <a
-                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
-                href="https://www.instagram.com/"
-                target="__blank"
-                rel="noopener"
-              >
-                Instagram
-                <FontAwesomeIcon icon={faInstagram} size="xl" />
-              </a>
+              <Button
+                link="https://wa.me/"
+                name="WhatsApp"
+                iconName={faWhatsapp}
+              />
+              <Button
+                link="mailto:byron@byronsolutions.com"
+                name="E-mail"
+                iconName={faEnvelope}
+              />
+              <Button
+                link="https://www.instagram.com/"
+                name="Instagram"
+                iconName={faInstagram}
+              />
             </div>
           </div>
         </div>
