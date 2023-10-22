@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div>
+      <div id="servicos">
         <Carrossel />
       </div>
       <section id="contato" className="flex items-center justify-center">
