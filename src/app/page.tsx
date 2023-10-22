@@ -1,13 +1,14 @@
 import Form from "@/components/Form";
 import React from "react";
 import Carrossel from "../components/Carrossel";
+import Button from "@/components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export default function Home() {
   return (
-    <main className="bg-gray-200">
+    <main>
       <section id="sobre" className="flex items-center justify-center">
         <div
           id="sobre-div"
@@ -78,31 +79,21 @@ export default function Home() {
               id="contato-parte-2"
               className="flex max-w-md flex-col items-center justify-center gap-8"
             >
-              <a
-                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
-                href="https://wa.me/55XXXXXXXXXXX"
-                target="__blank"
-                rel="noopener"
-              >
-                WhatsApp
-                <FontAwesomeIcon icon={faWhatsapp} size="xl" />
-              </a>
-              <a
-                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
-                href="mailto:byron@byronsolutions.com"
-              >
-                E-mail
-                <FontAwesomeIcon icon={faEnvelope} size="xl" />
-              </a>
-              <a
-                className="flex w-full items-center justify-center gap-4 rounded-full bg-blue-600 px-8 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:bg-blue-700 focus:outline-none active:bg-blue-800"
-                href="https://www.instagram.com/"
-                target="__blank"
-                rel="noopener"
-              >
-                Instagram
-                <FontAwesomeIcon icon={faInstagram} size="xl" />
-              </a>
+              <Button
+                link="https://wa.me/55XXXXXXXXXXX"
+                name="WhatsApp"
+                iconName={faWhatsapp}
+              />
+              <Button
+                link="mailto:byron@byronsolutions.com"
+                name="E-mail"
+                iconName={faEnvelope}
+              />
+              <Button
+                link="https://www.instagram.com/"
+                name="Instagram"
+                iconName={faInstagram}
+              />
             </div>
           </div>
         </div>

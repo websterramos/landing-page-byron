@@ -15,7 +15,7 @@ const Header = () => {
         className="flex h-20 w-full max-w-7xl items-center justify-between px-4"
       >
         <a id="header-parte-1" className="focus:outline-none" href="#home">
-          <img className="w-10" src="img/logo2.jpg" alt="Logo" />
+          <img className="w-10" src="img/logo.png" alt="Logo" />
         </a>
 
         <div id="header-parte-2" className="hidden md:flex">
