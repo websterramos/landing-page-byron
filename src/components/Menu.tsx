@@ -1,51 +1,37 @@
-"use client";
-//Arquivo: Efeito do Menu (Navbar)
-import React, { useEffect } from "react";
-
-export function setupMenu() {
-  const btn = document.getElementById("menuButtom");
-  const menu = document.getElementById("menu");
-
-  if (btn && menu) {
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-  }
-}
+import React from "react";
 
 const Menu = () => {
-  useEffect(() => {
-    setupMenu();
-  }, []);
-
   return (
-    <div id="menu" className="hidden md:hidden">
-      <div className="pd-2 px-2 pt-2 sm:px-3">
+    <div>
+      <nav className="flex flex-col justify-between gap-8 p-4 md:flex-row md:items-center">
         <a
+          className="duration-400 rounded-md px-2 py-1 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300 focus:outline-none active:bg-gray-300"
           href="#home"
-          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
         >
           Home
         </a>
+
         <a
-          href="#empresa"
-          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
+          className="duration-400 rounded-md px-2 py-1 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300 focus:outline-none active:bg-gray-300"
+          href="#sobre"
         >
-          Empresa
+          Sobre
         </a>
+
         <a
+          className="duration-400 rounded-md px-2 py-1 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300 focus:outline-none active:bg-gray-300"
           href="#servicos"
-          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
         >
           Serviços
         </a>
+
         <a
+          className="duration-400 rounded-md px-2 py-1 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300 focus:outline-none active:bg-gray-300"
           href="#contato"
-          className="duration-400 block rounded-md px-3 py-2 transition ease-in-out hover:bg-gray-200 focus:bg-gray-300"
         >
           Contato
         </a>
-      </div>
+      </nav>
     </div>
   );
 };
