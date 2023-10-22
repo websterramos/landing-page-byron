@@ -1,7 +1,10 @@
 import Form from "@/components/Form";
+<<<<<<< HEAD
+import React from 'react';
+import Carrossel from '../components/Carrossel'
+=======
 import React from "react";
 import Carrossel from "../components/Carrossel";
-import Button from "@/components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -36,7 +39,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div>
+      <div id="servicos">
         <Carrossel />
       </div>
       <section id="contato" className="flex items-center justify-center">
