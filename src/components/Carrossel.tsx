@@ -65,11 +65,11 @@ export default function Carrossel() {
         />
       </div>
 
-      {/* {left arrow} */}
+      {/* {flecha direita} */}
       <div className="absolute left-5 top-[50%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-blue-600 group-hover:block">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
-      {/* {right arrow} */}
+      {/* {flecha esquerda} */}
       <div className="absolute right-5 top-[50%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-blue-600 group-hover:block">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
