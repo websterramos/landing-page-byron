@@ -95,7 +95,8 @@ export default function Carrossel() {
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className="cursor-pointer text-2xl hover:text-blue-600"
+              className={`cursor-pointer text-2xl hover:text-blue-600 ${currentIndex === slideIndex ? "text-black" : ""}`}
+
             >
               <RxDotFilled />
             </div>
