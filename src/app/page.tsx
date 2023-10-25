@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="servicos">
+      <section id="servicos" className="pt-[75px]">
         <Carrossel />
       </section>
 
