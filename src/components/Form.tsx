@@ -1,20 +1,52 @@
-"use client";
 import React from "react";
 
-interface IProps {
-  formField: string;
-  type: string;
-}
-
-const Form = ({ formField, type }: IProps) => {
+const Form = () => {
   return (
-    <div className="flex w-full flex-col gap-1">
-      <p className="font-medium">{formField}</p>
-      <input
-        className="rounded-lg border border-gray-400 bg-gray-100 px-2  py-1 font-light drop-shadow-lg transition duration-300 ease-in-out required:border-red-500 focus:border-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-opacity-50"
-        type={type}
-      />
-    </div>
+    <form
+      action="/contato"
+      method="post"
+      className="flex flex-col justify-center gap-4 p-8 text-sm"
+    >
+      <div className="flex flex-col">
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          id="nome"
+          className="rounded-md border-2 border-gray-300 p-2 focus:outline-none"
+        />
+      </div>
+      <div className="flex flex-col">
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          className="rounded-md border-2 border-gray-300 p-2 focus:outline-none"
+        />
+      </div>
+      <div className="flex flex-col">
+        <label for="telefone">Telefone</label>
+        <input
+          type="tel"
+          id="telefone"
+          className="rounded-md border-2 border-gray-300 p-2 focus:outline-none"
+        />
+      </div>
+      <div className="flex flex-col">
+        <label for="msg">Mensagem</label>
+        <textarea
+          id="msg"
+          className="rounded-md border-2 border-gray-300 p-2 focus:outline-none"
+        ></textarea>
+      </div>
+      <div>
+        <button
+          type="submit"
+          className="rounded-md bg-blue-700 px-6 py-4 font-semibold text-white"
+        >
+          Enviar mensagem
+        </button>
+      </div>
+    </form>
   );
 };
 
