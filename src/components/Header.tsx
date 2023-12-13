@@ -9,7 +9,7 @@ const Header = () => {
   let [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <header className="z-10 w-full items-center justify-center bg-white px-4 font-medium shadow-lg drop-shadow-lg md:fixed md:flex md:text-lg">
+    <header className=" w-full items-center justify-center bg-white px-4 font-medium shadow-lg drop-shadow-lg  md:flex md:text-lg">
       <div
         id="header-div"
         className="flex h-20 w-full max-w-7xl items-center justify-between px-4"

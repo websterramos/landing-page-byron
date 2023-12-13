@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <main>
       <section id="home"></section>
+      <Homx />
 
       <About />
 
