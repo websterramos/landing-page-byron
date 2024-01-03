@@ -3,11 +3,13 @@ import Carrossel from "../components/Carrossel";
 import Homx from "../components/Homx";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
     <main>
       <section id="home"></section>
+      <Homx />
 
       <About />
 
@@ -16,6 +18,8 @@ export default function Home() {
       </section>
 
       <Contact />
+
+      <Faq />
     </main>
   );
 }

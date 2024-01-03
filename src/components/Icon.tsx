@@ -5,7 +5,6 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 interface IProps {
   link: string;
-  name: string;
   iconName: IconDefinition;
 }
 
